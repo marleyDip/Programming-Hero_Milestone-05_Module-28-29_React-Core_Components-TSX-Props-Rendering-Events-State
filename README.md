@@ -480,26 +480,10 @@ This repository represents another step in my journey toward becoming a stronger
 
   <p align="center">
 
-[![🌐 Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge)](https://marleydip.netlify.app/)
-&nbsp;
-[![💻 GitHub](https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github)](https://github.com/marleyDip)
-
-</p>
-
-  <p align="center">
-    <a href="https://marleydip.netlify.app/" target="_blank">
-      <img
-        src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge"
-        alt="Portfolio"
-      />
-    </a>
+    [![🌐 Portfolio](https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge)](https://marleydip.netlify.app/)
     &nbsp;
-    <a href="https://github.com/marleyDip" target="_blank">
-      <img
-        src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github"
-        alt="GitHub Profile"
-      />
-    </a>
+    [![💻 GitHub](https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github)](https://github.com/marleyDip)
+
   </p>
 
 </div>
