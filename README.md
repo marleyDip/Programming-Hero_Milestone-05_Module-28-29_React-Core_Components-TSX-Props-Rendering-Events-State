@@ -478,14 +478,19 @@ This repository represents another step in my journey toward becoming a stronger
     <strong>Software Engineer | Full-Stack (MERN / PERN) Developer</strong>
   </p>
 
-  <p>
+  <p align="center">
     <a href="https://marleydip.netlify.app/" target="_blank">
-      <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge" alt="Portfolio" />
+      <img
+        src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge"
+        alt="Portfolio"
+      />
     </a>
-  </p>
-  <p>
+    &nbsp;
     <a href="https://github.com/marleyDip" target="_blank">
-      <img src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github" alt="GitHub Profile" />
+      <img
+        src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github"
+        alt="GitHub Profile"
+      />
     </a>
   </p>
 
