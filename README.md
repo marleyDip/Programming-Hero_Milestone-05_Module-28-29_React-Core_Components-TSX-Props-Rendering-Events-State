@@ -4,7 +4,7 @@
 
 ### 🚀 Building Strong React Foundations with TypeScript
 
-A hands-on learning repository covering **React Components, TSX, Props, Rendering, Events, State, API Integration, Hooks, Suspense, and Component-Based Thinking.**
+A hands-on learning repository covering **React Components, TSX, Props, Rendering, Events, State Management, API Integration, Hooks, Suspense, and Component-Based Thinking.**
 
 <br />
 
@@ -49,7 +49,7 @@ React Fundamentals
    Components
         │
         ▼
-      JSX / TSX
+    JSX / TSX
         │
         ▼
        Props
@@ -64,16 +64,19 @@ Conditional Rendering
    Event Handling
         │
         ▼
-       State
+  State Management
         │
         ▼
-      useState
+     useState
         │
         ▼
     API / Fetch
         │
         ▼
      useEffect
+        │
+        ▼
+     use() API
         │
         ▼
    React Suspense
@@ -136,13 +139,15 @@ Reusable UI
 ```text
 Events
   ↓
-State
+State Management
   ↓
 useState
   ↓
 API Request
   ↓
 Async/Await
+  ↓
+use() API
   ↓
 useEffect
   ↓
@@ -219,7 +224,7 @@ Using different approaches to render UI conditionally:
 
 {condition ? <Success /> : <Error />}
 
-if (condition) {
+if (!condition) {
   return <Component />;
 }
 ```
@@ -245,9 +250,9 @@ onSubmit
 onMouseEnter
 ```
 
-### 🔄 State
+### 🔄 State Management
 
-Understanding how state changes trigger React components to re-render.
+Understanding how state changes trigger React components to **re-render** and update the UI.
 
 ### 🪝 useState
 
@@ -259,21 +264,94 @@ const [count, setCount] = useState(0);
 
 ### 🌐 API Integration
 
-Fetching external data using the Fetch API and handling asynchronous operations.
+Fetching external data using the **_`Fetch API`_** and handling asynchronous operations with **Promises** and `async/await`.
+
+Also exploring React's **`use()` API** for reading Promises directly inside components.
+
+#### Using `async/await`
 
 ```tsx
 const response = await fetch(url);
 const data = await response.json();
+
+async function getData () {
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data;
+};
+
+const getData = async function () {
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data;
+};
+
+const getData = async () => { 
+  const response = await fetch(url);
+  const data = await response.json();
+
+  return data; 
+};
 ```
 
-### 🔁 useEffect
+#### Working with Promises + `use()`
 
-Understanding side effects and dependency arrays.
+```tsx
+const dataPromise = fetch(url)
+  .then(response => response.json());
+
+const data = use(dataPromise);
+```
+
+This helped me understand how **Promises represent asynchronous operations**, how `async/await` simplifies working with Promises, and how React's **`use()` API** can read a Promise directly inside a component.
+
+<!-- ### 🪝 `use()` API
+
+Exploring React's `use()` API for reading **Promises and Context** directly inside components and working with asynchronous data alongside **React Suspense**. -->
+
+### 🪝 `use()` API
+
+Exploring React's **`use()` API** for reading **Promises and Context** directly inside components and using it with **React Suspense** for handling asynchronous data.
+
+> **`use()`** → Reads a resource such as a Promise or Context and returns its value.
+
+```tsx
+const users = use(usersPromise);
+```
+
+### 🔁 `useEffect`
+
+Understanding **side effects, dependency arrays, and synchronization with external systems**.
+
+> **`useEffect()`** → Performs side-effect logic after rendering, such as synchronizing with external systems.
 
 ```tsx
 useEffect(() => {
-  // side effect
+  // side effect logic
 }, []);
+```
+
+### 🧠 `use()` vs `useEffect()`
+
+```text
+use()
+ ↓
+READ a resource
+ ↓
+Promise / Context
+ ↓
+Returns the value / data
+
+
+useEffect()
+ ↓
+PERFORM a side effect
+ ↓
+After rendering
+ ↓
+Synchronize with external systems
 ```
 
 ### 🧩 Thinking in React
@@ -287,7 +365,7 @@ Components
  ↓
 Props
  ↓
-State
+State Management
  ↓
 Events
  ↓
@@ -361,6 +439,8 @@ These fundamentals create the foundation for more advanced React development:
 
 ```text
 React Core
+    │
+    ├── Advanced React Hooks
     │
     ├── React Router
     │
@@ -441,7 +521,8 @@ The focus is on learning concepts through:
 - [x] Understand state and re-rendering
 - [x] Use `useState`
 - [x] Fetch API data
-- [x] Work with async/await
+- [x] Work with async/await and Promises
+- [x] Use `use()` API
 - [x] Use `useEffect`
 - [x] Explore React Suspense
 - [x] Develop a component-based mindset
