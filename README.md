@@ -482,6 +482,8 @@ This repository represents another step in my journey toward becoming a stronger
     <a href="https://marleydip.netlify.app/" target="_blank">
       <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Website-0A0A0A?style=for-the-badge" alt="Portfolio" />
     </a>
+  </p>
+  <p>
     <a href="https://github.com/marleyDip" target="_blank">
       <img src="https://img.shields.io/badge/💻_GitHub-View_Profile-181717?style=for-the-badge&logo=github" alt="GitHub Profile" />
     </a>
@@ -491,7 +493,7 @@ This repository represents another step in my journey toward becoming a stronger
 
 <p align="center">
   Passionate about building <strong>modern, scalable, and user-focused web applications</strong>
-  while continuously improving ***JavaScript***, ***TypeScript***, ***React***, ***problem-solving***, and **full-stack development skills**.
+  while continuously improving <b><i>JavaScript</i></b>, <b><i>TypeScript</i></b>, <b><i>React</i></b>, <b><i>problem-solving</i></b>, and <b>full-stack development skills</b>.
 </p>
 
 ### 🚀 Tech Focus
